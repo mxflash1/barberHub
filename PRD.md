@@ -1,31 +1,48 @@
 """
-# Product Requirements Document (PRD) — Barber AI App
+# Product Requirements Document (PRD) — Barber Central
 
-This document expands the scope and requirements strictly from the existing README and TODO. It does not introduce new features beyond what is already listed. It organizes the work so it is clear what to build and how to validate it.
+This document defines the requirements for Barber Central, a comprehensive barber management system combining an iOS app and customizable website. This system serves as the complete hub for barbers to manage their business operations.
 
 ## 1) Overview
-- Purpose: An iOS app for barbers to manage clients using AI.
-- Platform: iOS (SwiftUI frontend).
-- Core capabilities (per README):
-  - AI-powered haircut history tracking via before/after photos
-  - Client profiles with photos, preferences, and visit frequency
-  - Smart SMS reminders based on AI-predicted return times
-  - Integrated booking calendar with support for web and app entries
-  - Camera integration to take and tag photos for each visit
-- Tech stack (per README):
-  - SwiftUI (Frontend)
-  - Firebase or Supabase (Backend)
+- Purpose: A comprehensive barber management system combining iOS app and customizable website
+- Platforms: iOS (SwiftUI frontend) + Web platform (customizable website)
+- Core capabilities:
+  - Complete client management with haircut history and AI analysis
+  - Centralized booking calendar with real-time sync between app and website
+  - Automated SMS reminders based on client visit patterns
+  - Customizable website for online bookings
+  - Availability management and client announcements
+  - Camera integration for before/after photo capture
+- Tech stack:
+  - SwiftUI (iOS Frontend)
+  - Web technologies (Website Frontend)
+  - Firebase or Supabase (Unified Backend)
   - Twilio (SMS)
   - AI image analysis API (e.g., AWS Rekognition)
-  - Optional: Python microservice for haircut frequency prediction
-- Status (per README): Initial project scaffolding and planning in progress
+  - Real-time sync between app and website
+- Status: Project pivoting to comprehensive barber management system; requirements being updated
 
 ## 2) Goals and Non-Goals
-- Goals: Deliver the features listed above as an MVP.
-- Non-Goals (MVP): Any feature not explicitly listed in Goals above.
+- Goals: 
+  - Deliver a complete barber management system with iOS app and customizable website
+  - Enable barbers to manage all aspects of their business from one central location
+  - Provide seamless integration between web bookings and app calendar
+  - Offer automated client communication and reminder system
+  - Allow barbers to customize their online presence with branding
+- Non-Goals (MVP): 
+  - Advanced analytics and reporting features
+  - Multi-location management
+  - Staff management features
+  - Payment processing integration
+  - Inventory management
 
-## 3) Primary User
-- Barber using an iOS app to manage clients and their haircut history, send reminders, and manage bookings.
+## 3) Primary Users
+- **Primary User**: Barber using the iOS app to manage clients, bookings, and business operations
+- **Secondary User**: Clients using the barber's website to book appointments online
+- **User Scenarios**:
+  - Independent barbers looking for complete business management
+  - Barbershops wanting to modernize their booking system
+  - Barbers who want online presence with full control over their calendar
 
 ## 4) Core Features with Requirements and Acceptance Criteria
 
@@ -126,5 +143,7 @@ This document expands the scope and requirements strictly from the existing READ
 - Details of web booking capture/sync path.
 
 ## 11) Current Status
-- Initial project scaffolding and planning in progress (per README).
+- Documentation established: `README.md`, `PRD.md`, and `TODO.md`
+- MVP scope locked per PRD; high-level user flows captured in Section 7
+- No SwiftUI project created yet; wireframes and clickable prototype are next
 """ 
